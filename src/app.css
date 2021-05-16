@@ -1,0 +1,37 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+
+.far {
+    font-family: Font Awesome 5 Free, fa-regular-400;
+    font-weight: 400;
+}
+
+.fab {
+    font-family: Font Awesome 5 Brands, fa-brands-400;
+    font-weight: 400;
+}
+
+.fas {
+    font-family: Font Awesome 5 Free, fa-solid-900;
+    font-weight: 900;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.ft20{
+    font-size: 15px;
+}
+
+#class_grid{
+    background: linear-gradient(to right, #990033 0%, #000066 100%);
+}
+
+.brd_btm {
+    border-bottom-color: blue;
+    border-bottom-width: 15;
+    margin-top:-1800px;
+}
+
