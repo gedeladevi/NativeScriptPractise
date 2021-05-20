@@ -3,9 +3,9 @@
     src="https://images.pexels.com/photos/3952051/pexels-photo-3952051.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
 </Image>
 </GridLayout>
-<ActionBar title="" id="class_grid">
+<ActionBar title="" class="class_grid1">
     <StackLayout orientation="horizontal">
-        <Label width="33%" height="25%" text="&#xf0c9;" class="fas fs-30"
+        <Label width="33%" height="25%" text="&#xf0c9;" (tap)="gotologin()"   class="fas fs-30"
             style="color:white;">
         </Label>
         <Label class="ft20" text="Vegitable Market" width="47%" height="50"
@@ -41,12 +41,11 @@
 </GridLayout> -->
 
 
-
 <ScrollView orientation="horizontal" verticalAlignment="top" margintop="100">
     <GridLayout class="m-15"
         columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
         <Image
-            src="https://images.all-free-download.com/images/graphicthumb/cauliflower_highdefinition_picture_169099.jpg"
+            src="https://images.all-free-download.com/images/graphicthumb/cauliflower_highdefinition_picture_169099.jpg" 
             width="150" height="150" class="h3 m-15" col="0">
         </Image>
         <Image
@@ -121,13 +120,4 @@
 </ScrollView>
 
 
-
-<StackLayout margintop="200">
-    <TextField hint="Email Address" keyboardType="email"
-      autocorrect="false" autocapitalizationType="none"></TextField>
-    <TextField hint="Password" secure="true"></TextField>
-
-    <Button text="Sign in"></Button>
-    <Button text="Sign up for Groceries"></Button>
-  </StackLayout>
 
