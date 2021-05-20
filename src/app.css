@@ -26,12 +26,23 @@
 }
 
 #class_grid{
-    background: linear-gradient(to right, #990033 0%, #000066 100%);
+    /* background: linear-gradient(to right, #990033 0%, #000066 100%); */
+    background: linear-gradient(to right, #66ff66 0%, #ff3300 100%);
 }
 
-.brd_btm {
-    border-bottom-color: blue;
-    border-bottom-width: 15;
-    margin-top:-1800px;
+.bgimg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+
+
+
+
+
+
+
+
+
 
