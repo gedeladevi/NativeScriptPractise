@@ -16,4 +16,7 @@ export class LoginComponent implements OnInit {
     gotocreateaccount(): void{
         this.route.navigate(["/home/createaccount"]);
     }
+    gotoforgotpassword(): void{
+        this.route.navigate(["/home/forgotpassword"]);
+    }
 }
