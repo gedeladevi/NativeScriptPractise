@@ -44,7 +44,20 @@
     background: linear-gradient(to right, #99ccff 0%, #66ccff 100%);
 }
 
+.page {
+    background-color: rgb(237, 237, 237);
+}
 
+.cardStyle {
+    background-color: #fff;
+    color: rgb(43, 43, 43);
+}
+
+.cardContent {
+    padding: 20;
+    font-weight: bold;
+    font-size: 30;
+}
 
 
 
