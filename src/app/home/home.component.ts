@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core'
 import { Router } from '@angular/router';
 import { registerElement } from '@nativescript/angular';
 import { CardView } from '@nstudio/nativescript-cardview';
+
+
+
 registerElement('CardView', () => CardView);
 @Component({
   selector: 'Home',
@@ -9,6 +12,7 @@ registerElement('CardView', () => CardView);
 })
 export class HomeComponent implements OnInit {
 
+  
 
   constructor(private route:Router) {
 
@@ -19,6 +23,7 @@ export class HomeComponent implements OnInit {
   gotologin(): void{
 this.route.navigate(["/home/login"]);
 }
+
 
 
 }
