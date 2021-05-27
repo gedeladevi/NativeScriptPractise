@@ -8,6 +8,22 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('~/app/home/home.module').then((m) => m.HomeModule),
   },
+  {
+    path: 'browse',
+    loadChildren: () => import('~/app/browse/browse.module').then((m) => m.BrowseModule),
+  },
+  {
+    path: 'featured',
+    loadChildren: () => import('~/app/featured/featured.module').then((m) => m.FeaturedModule),
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('~/app/search/search.module').then((m) => m.SearchModule),
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('~/app/settings/settings.module').then((m) => m.SettingsModule),
+  },
 ]
 
 @NgModule({
@@ -15,3 +31,6 @@ const routes: Routes = [
   exports: [NativeScriptRouterModule],
 })
 export class AppRoutingModule {}
+
+
+
