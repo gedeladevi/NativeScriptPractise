@@ -23,8 +23,9 @@ export class HomeComponent implements OnInit {
 
   }
   ngOnInit(): void {
-
+    
   }
+  
   gotologin(): void{
 this.route.navigate(["/home/login"]);
 }
