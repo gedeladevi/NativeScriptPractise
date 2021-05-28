@@ -1,16 +1,18 @@
  <GridLayout rows="auto, *">
+
+   <ActionBar class="class_grid1">
+      <NavigationButton visibility="hidden"></NavigationButton>
+      <GridLayout columns="50,*,50" row="*">
+         <Label class="fas fs-30" text="&#xf0c9; "row="0" col="0" (tap)="onDrawerButtonTap()"></Label>
+          <Label class="fas ft20 action-bar-title" row="0" col="1" text="Vegitable Market" ></Label>
+        <Label class="fas fs-30" text="&#xf508;" row="0" col="2" (tap)="gotologin()"></Label> 
+      </GridLayout>
+    </ActionBar>
   
    <ScrollView  row="1" height="100%" iosOverflowSafeAreaEnabled="false">
       <StackLayout>
       
-         <ActionBar class="class_grid1">
-            <NavigationButton visibility="hidden"></NavigationButton>
-            <GridLayout columns="50,*,50" row="*">
-               <Label class="fas fs-30" text="&#xf0c9; "row="0" col="0" (tap)="onDrawerButtonTap()"></Label>
-                <Label class="fas ft20 action-bar-title" row="0" col="1" text="Vegitable Market" ></Label>
-              <Label class="fas fs-30" text="&#xf508;" row="0" col="2" (tap)="gotologin()"></Label> 
-            </GridLayout>
-         </ActionBar>
+      
   
          
           <Label *ngIf="true"  [text]="'Categories1'" class="bold font-size-h3"  margin="20 20 0 20"></Label>

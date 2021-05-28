@@ -44,5 +44,10 @@ export class AppComponent {
     const sideDrawer = <RadSideDrawer>Application.getRootView()
     sideDrawer.closeDrawer()
   }
+
+
+   
+
+
 }
 

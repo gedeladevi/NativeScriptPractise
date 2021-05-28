@@ -13,10 +13,7 @@ registerElement('CardView', () => CardView);
 })
 export class HomeComponent implements OnInit {
   onScroll(args: ScrollEventData) {
-    const scrollView = args.object as ScrollView;
-
-    console.log("scrollX: " + args.scrollX);
-    console.log("scrollY: " + args.scrollY);
+    const scrollView = args.object as ScrollView;    
 }
  
   constructor(private route:Router) {
