@@ -11,15 +11,36 @@
   
    <ScrollView  row="1" height="100%" iosOverflowSafeAreaEnabled="false">
       <StackLayout>
-      
-      
-  
          
-          <Label *ngIf="true"  [text]="'Categories1'" class="bold font-size-h3"  margin="20 20 0 20"></Label>
+         
+         <GridLayout>
+            <SearchBar hint="Search hint" backgroundColor="#ffa366" width="80%" height="40" marginTop="25"
+                 [text]="searchPhrase" verticalAlignment="top" 
+                (submit)="onSearchSubmit($event)">
+            </SearchBar>
+        </GridLayout> 
+
           <ng-container>
               <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
                   <StackLayout orientation="horizontal" padding="10 20">
                       
+                     <!-- <GridLayout class="m-15" columns="auto auto">
+                        <CardView class="cardStyle" margin="10" elevation="40" radius="1" height="400" col="0">
+                            <GridLayout rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
+                              <image
+                                src="https://images.all-free-download.com/images/graphicthumb/character_pumpkin_white_263388.jpg"
+                                stretch="aspectFit" verticalAlignment="stretch"  col="1"  col="1"  rowSpan="2" >
+                              </image>
+                              <label class="createdBy text-left" horizontalAlignment="left" text="hjhjh"  row="1"  col="2" textWrap="true"></label>
+                              <label class="createdBy text-left" horizontalAlignment="left" text="hjhjh"  row="2"  col="2" textWrap="true"></label> 
+                              <image [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
+                              stretch="aspectFit" colSpan="3"  col="1" row="3">  
+                            </image> 
+                            <label  horizontalAlignment="left" text="hjhjh" colSpan="3"  row="4"  textWrap="true" col="1"></label>   
+                           <label  horizontalAlignment="left"  text="jhjhj"  textWrap="true"   col="1" row="5"  colSpan="3"></label>  
+                        </GridLayout>
+                     </CardView>     
+               </GridLayout> -->
                         <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
                            <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
                                 <image
@@ -58,77 +79,54 @@
                                  [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
                                  stretch="aspectFit" colSpan="3" col="1" row="3" >
                               </image>
+                            
                           </GridLayout>
                         </CardView>
-                        <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
-                           <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-                                <image
-                                 [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
-                                 stretch="aspectFit" colSpan="3" col="1" row="3" >
-                              </image>
-                          </GridLayout>
-                        </CardView>
-                    
                   </StackLayout>
               </ScrollView>
           </ng-container>
-          <Label *ngIf="true"  [text]="'Categories2'" class="bold font-size-h3"  margin="20 20 0 20"></Label>
-          <ng-container>
-              <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
-                  <StackLayout orientation="horizontal" padding="10 20">
-                      
-                        <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
-                           <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-                                <image
-                                 [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
-                                 stretch="aspectFit" colSpan="3" col="1" row="3" >
-                              </image>
-                          </GridLayout>
-                        </CardView>
-                        <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
-                           <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-                                <image
-                                 [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
-                                 stretch="aspectFit" colSpan="3" col="1" row="3" >
-                              </image>
-                          </GridLayout>
-                        </CardView>
-                        <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
-                           <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-                                <image
-                                 [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
-                                 stretch="aspectFit" colSpan="3" col="1" row="3" >
-                              </image>
-                          </GridLayout>
-                        </CardView>
-                        <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
-                           <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-                                <image
-                                 [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
-                                 stretch="aspectFit" colSpan="3" col="1" row="3" >
-                              </image>
-                          </GridLayout>
-                        </CardView>
-                        <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
-                           <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-                                <image
-                                 [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
-                                 stretch="aspectFit" colSpan="3" col="1" row="3" >
-                              </image>
-                          </GridLayout>
-                        </CardView>
-                        <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="220" col="0" >
-                           <GridLayout  rows="10,30,30,250, auto, auto,10" columns="10,40, *, 30,10">
-                                <image
-                                 [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
-                                 stretch="aspectFit" colSpan="3" col="1" row="3" >
-                              </image>
-                          </GridLayout>
-                        </CardView>
-                    
-                  </StackLayout>
-              </ScrollView>
+
+         <stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top" margin="25px">
+            <Label text="Catagories" class="ft20"  width="85%" height="40" style="padding-left: 20;"></Label>     
+            <Label  width="15%" height="30" (tap)="GoToAllCatgeoryList()">
+               <FormattedString>
+                <Span text="SeeAll" class="ft20 fas"></Span>
+                   <Span text="&#xf0d7;" class="ft20 fas" fontAttributes="Bold"></Span>
+               </FormattedString>
+           </Label>
+         </stacklayout>
+      
+        <ng-container>
+             
+           
+               
+                    <GridLayout columns="auto,auto" rows="auto,auto" verticalAlignment="top" class="grid">
+                     
+                    <image row="0" col="0" height="150" margin="15" width="170" class="cat_image"
+                    [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
+                  
+                        stretch="aspectFill">
+                    </image>
+                    <image  row="0" col="1" height="150" margin="15" width="170" class="cat_image"
+                        [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
+                        stretch="aspectFill">
+                    </image>
+                
+                  
+                    <image  row="1" col="0" height="150" margin="15" width="170" class="cat_image"
+                        [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
+                        stretch="aspectFill">
+                    </image>
+                    <image row="1" col="1" height="150" margin="15" width="170" class="cat_image"
+                        [src]="'https://images.all-free-download.com/images/graphicthumb/onion_vegetables_shell_214521.jpg'"
+                        stretch="aspectFill">
+                    </image>                 
+                  
+                </GridLayout>                
           </ng-container>
+ 
+
+  
           <Label *ngIf="true"  [text]="'Categories3'" class="bold font-size-h3"  margin="20 20 0 20"></Label>
           <ng-container>
               <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
