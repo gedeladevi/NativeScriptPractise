@@ -11,11 +11,24 @@
   
     <ActionBar class="class_grid1">
       <NavigationButton visibility="hidden"></NavigationButton>
-      <GridLayout columns="50,*,50" row="70,70">
-         <Label class="fas fs-30" text="&#xf0c9; "row="0" col="0" (tap)="onDrawerButtonTap()"></Label>
-          <Label class="fas ft20 action-bar-title" row="0" col="1" text="Vegitable Market" ></Label>
-          <Label class="fas ft20 action-bar-title" row="1" col="1" text="Vegitable Market" ></Label>
-        <Label class="fas fs-30" text="&#xf508;" row="0" col="2" (tap)="gotologin()"></Label> 
+      <GridLayout columns="130,*,50" row="100">
+         <stackLayout row="0" col="0">
+         <Label class="fas fs-30" text="&#xf0c9;"  (tap)="onDrawerButtonTap()"></Label>
+         </stackLayout>
+          
+         <stackLayout  row="0" col="1">
+         <Label  class="fas ft20 action-bar-title" (tap)="GoToGoogleMap()" style="line-height: normal;">
+            <FormattedString>
+             <Span text="Delivary Location" class="ft20 fas"></Span>
+                <Span text="&#xf0d7;" class="ft20 fas" ></Span>
+            </FormattedString>
+        </Label>
+        <Label class="fas ft20 action-bar-title"  text="125,New Creek Road,CA" ></Label>
+      </stackLayout>
+
+      <stackLayout  row="0" col="2">
+        <Label class="fas fs-30" text="&#xf508;" (tap)="gotologin()"></Label> 
+      </stackLayout>
       </GridLayout>
     </ActionBar>
 
@@ -24,7 +37,7 @@
          
          
          <GridLayout>
-            <SearchBar hint="Search hint" backgroundColor="#ffa366" width="80%" height="40" marginTop="25"
+            <SearchBar hint="Search hint" backgroundColor="#D7B7FC" width="80%" height="40" marginTop="25"
                  [text]="searchPhrase" verticalAlignment="top" 
                 (submit)="onSearchSubmit($event)">
             </SearchBar>
@@ -120,7 +133,7 @@
             <Label  width="15%" height="30" (tap)="GoToAllCatgeoryList()">
                <FormattedString>
                 <Span text="SeeAll" class="ft20 fas"></Span>
-                   <Span text="&#xf0d7;" class="ft20 fas" fontAttributes="Bold"></Span>
+                   <Span text="&#xf0d7;" class="ft20 fas"></Span>
                </FormattedString>
            </Label>
          </stacklayout>

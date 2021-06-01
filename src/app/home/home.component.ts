@@ -43,6 +43,8 @@ onDrawerButtonTap(): void{
 GoToAllCatgeoryList():void{
   this.route.navigate(["/home/allcatagorieslist"]);
 }
-
+GoToGoogleMap():void{
+alert("Go TO GoogleMaps");
+}
 
 }

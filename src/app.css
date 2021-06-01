@@ -26,8 +26,8 @@
 }
 
 .class_grid{
-    /* background: linear-gradient(to right, #990033 0%, #000066 100%); */
-    background: linear-gradient(to right, #66ff66 0%, #ff3300 100%);
+    background-color:#bd92e7; 
+    
 }
 
 .bgimg {
@@ -37,7 +37,8 @@
 }
 
 .class_grid1{
-    background: linear-gradient(to right, #009900 0%, #ff3300 100%);
+    background-color:#9934FE;
+    color: azure;
 }
 
 .btncss{
