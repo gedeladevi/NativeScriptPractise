@@ -46,5 +46,16 @@ GoToAllCatgeoryList():void{
 GoToGoogleMap():void{
 alert("Go TO GoogleMaps");
 }
-
+GoTovegitabelsList():void{
+  alert("Different types of vegitabels available")
+}
+GoToFruitsList():void{
+  alert("All Fruits available here")
+}
+GoToLeafyvegitabelsList():void{
+  alert("Fresh Leafy Vegitabels available here")
+}
+GoToChacolatesList():void{
+  alert("All types of chacolates available here")
+}
 }

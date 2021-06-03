@@ -20,14 +20,28 @@
 .fs-30{
     font-size: 30px;
 }
+.color-violet{
+    color: blueviolet;
+}
+.fs-100{
+    font-size: 100px;
+}
 
 .ft20{
     font-size: 15px;
+    font-weight: bold;
 }
 
+.ml-10{
+    margin-left:10;
+}
 .class_grid{
     background-color:#bd92e7; 
     
+}
+.brd{
+    border: 5px solid rgb(59, 243, 22);
+    border-radius: 5px;
 }
 
 .bgimg {
@@ -60,8 +74,19 @@
     font-size: 30;
 }
 
+.glow-shadow {
+    box-shadow: var(--box-shadow-default);
+  }
 
 
 
 
-
+  .color-white{
+    color: white;
+ }
+ .color-black{
+    color:black;
+ }
+ .text-center{
+     text-align: center;
+ }
