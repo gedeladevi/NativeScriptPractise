@@ -36,12 +36,12 @@
       <StackLayout>
          
          
-         <!-- <GridLayout>
+          <GridLayout>
             <SearchBar hint="Search hint" backgroundColor="#D7B7FC" width="80%" height="40" marginTop="25"
                  [text]="searchPhrase" verticalAlignment="top" 
                 (submit)="onSearchSubmit($event)">
             </SearchBar>
-        </GridLayout>  -->
+        </GridLayout> 
 
          <!-- <ng-container>
               <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
@@ -243,10 +243,154 @@
          </stacklayout>
         
 
-<GridLayout rows="*, *" columns="*, *" margin="15,15,7.5,7.5">
+         <ng-container>
+            <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
+               <StackLayout orientation="horizontal">
+                  <GridLayout  rows="auto" columns="200,200,200,200,200,200,200,200,200" >
+                 
+                     <GridLayout rows="*, *, *" columns="*, *" row="0" col="0">
+                 
+                     <GridLayout height="50" width="100" row="0" col="0">
+                       <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                 
+                         <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+                          <Label text="55%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                      </StackLayout>
+                       </GridLayout>
+                        
+                             <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+                      
+                     <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+                    
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                       <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+                       <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+                     </StackLayout>    
+                    </GridLayout> 
+                    
+                      
+                    <GridLayout rows="*, *, *" columns="*, *" row="0" col="1"> 
+                 
+                       <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                 
+                       <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                          <Label text="75%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                      </StackLayout>
+                       <image height="100" width="100" class="cat_image" src="res://flour1copy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+                 
+                       <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                          <Label text="Shreya Gold Tor Dal" textWrap="true" class="color-black" alignContent="center"></Label>
+                     </StackLayout>
+                    </GridLayout> 
+
+                    <GridLayout rows="*, *, *" columns="*, *" row="0" col="2"> 
+                 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+               
+                     <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                        <Label text="55%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                    </StackLayout>
+                     <image height="100" width="100" class="cat_image" src="res://edible_oils" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+               
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                        <Label text="Shreya Gold Edible Oil" textWrap="true" class="color-black" alignContent="center"></Label>
+                   </StackLayout>
+                  </GridLayout> 
+
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="3"> 
+                 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+               
+                     <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                        <Label text="35%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                    </StackLayout>
+                     <image height="100" width="100" class="cat_image" src="res://matar_besan" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+               
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                        <Label text="Priya Premium Besan Flour" textWrap="true" class="color-black" alignContent="center"></Label>
+                   </StackLayout>
+                  </GridLayout> 
+
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="4"> 
+                 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+               
+                     <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                        <Label text="45%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                    </StackLayout>
+                     <image height="100" width="100" class="cat_image" src="res://snacks" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+               
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                        <Label text="Potato Chilli Chips" textWrap="true" class="color-black" alignContent="center"></Label>
+                   </StackLayout>
+                  </GridLayout> 
+
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="5"> 
+                 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+               
+                     <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                        <Label text="25%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                    </StackLayout>
+                     <image height="100" width="100" class="cat_image" src="res://grain" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+               
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                        <Label text="Shreya Gold Tor Dal Loose" textWrap="true" class="color-black" alignContent="center"></Label>
+                   </StackLayout>
+                  </GridLayout> 
+
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="6"> 
+                 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+               
+                     <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                        <Label text="75%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                    </StackLayout>
+                     <image height="100" width="100" class="cat_image" src="res://bakery" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+               
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                        <Label text="Priya Cream Cakes" textWrap="true" class="color-black" alignContent="center"></Label>
+                   </StackLayout>
+                  </GridLayout> 
+
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="7"> 
+                 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+               
+                     <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                        <Label text="65%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                    </StackLayout>
+                     <image height="100" width="100" class="cat_image" src="res://ice_cream" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+               
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                        <Label text="Amul Ice Creams" textWrap="true" class="color-black" alignContent="center"></Label>
+                   </StackLayout>
+                  </GridLayout> 
+
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="8"> 
+                 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+               
+                     <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
+                        <Label text="55%" class="bold" margin="0,0,0,34" fontSize="15" color="#fff"></Label>
+                    </StackLayout>
+                     <image height="100" width="100" class="cat_image" src="res://banana" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+               
+                     <StackLayout row="2" col="0" colSpan="2" class="text-center">
+                        <Label text="Fresh Bananas" textWrap="true" class="color-black" alignContent="center"></Label>
+                   </StackLayout>
+                  </GridLayout> 
+            </GridLayout>
+      
+      </StackLayout>
+   </ScrollView>
+</ng-container>
+
+
+
+
+<!-- <GridLayout rows="*, *" columns="*, *" margin="15,15,7.5,7.5">
     <GridLayout rows="*, *, *" columns="*, *" row="0" col="0">
-   
-    <!-- <image height="50" width="25" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="0" col="0"></image> -->
 
     <GridLayout height="50" width="100" row="0" col="0">
       <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
@@ -255,12 +399,6 @@
          <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
      </StackLayout>
       </GridLayout>
-       
-       
-         <StackLayout row="0" col="1"  width="80"  >
-            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
-            <Label text="priyanandana" class="bold"  fontSize="15" verticalAlignment="bottom=" color="#fff"></Label>
-        </StackLayout>
      
     <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
    
@@ -286,9 +424,37 @@
 
    </GridLayout>  
 </GridLayout>
-    
-   
+ -->
 
+
+<stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top" backgroundcolor="red">
+   <Label text="Hot Deals" class="ft20"  width="80%" height="40" style="padding-left: 20;"></Label>    
+</stacklayout>
+
+<ng-container>
+   <GridLayout columns="auto,auto" rows="auto" verticalAlignment="top" margin="16" >
+
+      <ng-container >
+         <GridLayout height="160" margin="15" width="170" class="cat_image" backgroundColor="red" row="0" col="0">
+            <image  height="150" margin="15" width="150" class="cat_image"
+            src="res://flour3" stretch="aspectFill" ></image>
+            </GridLayout>
+        </ng-container>
+
+
+        <ng-container >
+         <GridLayout height="150" margin="15" width="170" class="cat_image" row="0" col="1" backgroundColor="#ffe6e6">
+            <image  height="130 " margin="15" width="130" class="cat_image"
+            src="res://hot_deal_tag" stretch="aspectFit" ></image>
+            <StackLayout row="1" col="1" colSpan="2" class="text-center">
+               <Label text="10% off" textWrap="true" class="color-black fas-30" alignContent="center"></Label>
+            </StackLayout>
+            
+          
+            </GridLayout>
+        </ng-container>
+      </GridLayout>                
+   </ng-container>
   
         <ng-container>
               <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
