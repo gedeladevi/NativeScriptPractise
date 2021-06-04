@@ -1,0 +1,27 @@
+<ActionBar class="class_grid1">
+  <NavigationButton visibility="hidden"></NavigationButton> 
+  <GridLayout columns="130,*,50" row="100">
+     <stackLayout row="0" col="0">
+     <Label class="fas fs-30 brd color-white" text="&#xf0c9;"  (tap)="onDrawerButtonTap()"></Label>
+     </stackLayout>
+      
+     <stackLayout  row="0" col="1">
+     <Label  class="fas ft20 action-bar-title" (tap)="GoToGoogleMap()">
+        <FormattedString>
+         <Span text="Delivary Location" class="ft20 fas color-white"  style="line-height: 2;"></Span>
+            <Span text="&#xf0d7;" class="ft20 fas color-white" ></Span>
+        </FormattedString>
+    </Label>
+    <Label class="fas ft20 action-bar-title color-white"  text="125,New Creek Road,CA" ></Label>
+  </stackLayout>
+  
+  <stackLayout  row="0" col="2">
+    <Label class="fas fs-30 color-white" text="&#xf508;" (tap)="gotologin()"></Label> 
+  </stackLayout>
+  </GridLayout>  
+ 
+</ActionBar> 
+
+ 
+
+

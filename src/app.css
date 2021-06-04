@@ -16,6 +16,9 @@
     font-family: Font Awesome 5 Free, fa-solid-900;
     font-weight: 900;
 }
+.ft18{
+    font-size:20px;
+}
 
 .fs-30{
     font-size: 30px;
@@ -78,9 +81,6 @@
     box-shadow: var(--box-shadow-default);
   }
 
-
-
-
   .color-white{
     color: white;
  }
@@ -90,3 +90,16 @@
  .text-center{
      text-align: center;
  }
+
+ .cat_image{
+    border-radius: 10;
+ }
+ 
+ .grid{
+ margin-left: 1.5%;
+ 
+ }
+ .cat_image1{  
+    border-radius: 10;
+ }
+  
