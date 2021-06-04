@@ -16,10 +16,10 @@ import { Application} from '@nativescript/core'
   styleUrls:["./home.component.css"]
 })
 export class HomeComponent implements OnInit {
-  searchPhrase: string;
-    onSearchSubmit(args): void {
-        let searchBar = <SearchBar>args.object;
-        console.log("You are searching for " + searchBar.text);}
+  // searchPhrase: string;
+  //   onSearchSubmit(args): void {
+  //       let searchBar = <SearchBar>args.object;
+  //       console.log("You are searching for " + searchBar.text);}
 
   onScroll(args: ScrollEventData) {
     const scrollView = args.object as ScrollView;    

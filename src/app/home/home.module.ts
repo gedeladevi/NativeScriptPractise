@@ -7,6 +7,7 @@ import { CreateaccountComponent} from '../createaccount/createaccount.component'
 import { ForgotpasswordComponent} from '../forgotpassword/forgotpassword.component'
 import { CommonModule} from '../commonheader/common.module'
 import { SeeallitemsComponent } from '../seeallitems/seeallitems.component'
+import { CommonhorizontalscrollComponent} from '../commonhorizontalscroll/commonhorizontalscroll.component'
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { SeeallitemsComponent } from '../seeallitems/seeallitems.component'
     ,CreateaccountComponent
     ,ForgotpasswordComponent     
     ,SeeallitemsComponent 
+    ,CommonhorizontalscrollComponent
 
   ],
   schemas: [NO_ERRORS_SCHEMA],

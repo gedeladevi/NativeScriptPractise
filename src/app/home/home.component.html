@@ -1,32 +1,11 @@
 <GridLayout rows="auto, *">
+   
 <common-header></common-header>
+
 <ScrollView  row="1" height="100%" iosOverflowSafeAreaEnabled="false">
    <StackLayout>  
-      <GridLayout>
-         <SearchBar hint="Search hint" backgroundColor="#D7B7FC" width="80%" height="40" marginTop="25"
-              [text]="searchPhrase" verticalAlignment="top" 
-             (submit)="onSearchSubmit($event)">
-         </SearchBar> 
-      </GridLayout>     
-      <ng-container>
-         <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
-            <StackLayout orientation="horizontal" padding="10 20">
-       <GridLayout  rows="150" columns="280,280,280,280,280" marginTop="15">
-        <image src="res://vegetables" stretch="aspectFill" class="cat_image1" height="150" width="260" col="0" row="0"  ></image> 
-     
-         <image src="res://fruits" stretch="aspectFill" class="cat_image1" height="150" width="260" col="1" row="0" ></image> 
-     
-         <image src="res://leafy_veg" stretch="aspectFill" class="cat_image1" height="150" width="260"  col="2" row="0" ></image> 
-     
-         <image src="res://chocolate" stretch="aspectFill" class="cat_image1" height="150" width="260" col="3" row="0" ></image> 
-         <image src="res://grocery_bag" stretch="aspectFit" class="cat_image1" height="150" backgroundColor="#00e600" width="260" col="4" row="0" ></image> 
-      </GridLayout>
-     </StackLayout>
-     </ScrollView>
-     </ng-container>
 
-
-
+<commonhorizontalscroll></commonhorizontalscroll>
 
          <stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top" margin="15px">
             <Label text="Catagories" class="ft20"  width="80%" height="40" style="padding-left: 20;"></Label>     
