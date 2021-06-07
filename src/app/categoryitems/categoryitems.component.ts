@@ -1,17 +1,14 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
-import { ScrollView, ScrollEventData } from "tns-core-modules/ui/scroll-view";
+import { Router } from '@angular/router';
 @Component({
-    selector: "seeall-items",
+    selector: "categoryitems",
     moduleId: module.id,
-    templateUrl: "./seeallitems.component.html",
-    styleUrls: ['./seeallitems.component.css']
+    templateUrl: "./categoryitems.component.html",
+    styleUrls: ['./categoryitems.component.css']
 })
-export class SeeallitemsComponent implements OnInit {
+export class CategoryitemsComponent implements OnInit {
 
-    onScroll(args: ScrollEventData) {
-        const scrollView = args.object as ScrollView;    
-    }
+ 
     constructor(private route:Router) {
     }
 
@@ -30,5 +27,4 @@ export class SeeallitemsComponent implements OnInit {
     alert("All types of chacolates available here")
    }
   
-
 }

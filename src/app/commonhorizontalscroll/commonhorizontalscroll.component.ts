@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { SearchBar } from 'tns-core-modules';
 @Component({
     selector: "commonhorizontalscroll",
@@ -13,9 +14,10 @@ export class CommonhorizontalscrollComponent implements OnInit {
         let searchBar = <SearchBar>args.object;
         console.log("You are searching for " + searchBar.text);}
 
-    constructor() {
+    constructor(private route:Router) {
     }
 
     ngOnInit(): void {
     }
+    
 }

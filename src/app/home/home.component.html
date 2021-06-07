@@ -7,89 +7,23 @@
 
 <commonhorizontalscroll></commonhorizontalscroll>
 
-         <stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top" margin="15px">
-            <Label text="Catagories" class="ft20"  width="80%" height="40" style="padding-left: 20;"></Label>     
-            <Label  width="20%" height="30" (tap)="GoToSeeAllItems()">
-               <FormattedString>
-                  <Span text="See All  " class="ft20 color-violet"></Span>
-                     <Span text="&#xf0da;" class="ft18 fas color-violet ml-10"></Span>
-                 </FormattedString>
-           </Label>
-         </stacklayout>
-
-          <ng-container>
-            <GridLayout columns="auto,auto" rows="auto,auto" verticalAlignment="top" margin="5" >
-
-               <ng-container >
-                  <GridLayout height="150" margin="15,7.5,7.5,15" width="170" class="cat_image" (tap)="GoTovegitabelsList()"row="0" col="0">
-                     <image  height="150" margin="15,7.5,7.5,15" width="170" class="cat_image"
-                     src="res://vegetables" stretch="aspectFill" ></image>
-                  
-                      <ng-container>
-                          <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="0" col="0" height="150" width="170"></ContentView>
-                      </ng-container>
+<stacklayout orientation="horizontal" width="100%" height="35" verticalAlignment="top" margin="5,10,0,10">
+   <Label text="Catagories" (tap)="GoToCategories()" class="ft20"  width="80%" height="30" style="padding-left: 20;"></Label>     
+   <Label  width="20%" height="30" (tap)="GoToSeeAllItems()">
+      <FormattedString>
+         <Span text="See All  " class="ft20 color-violet"></Span>
+            <Span text="&#xf0da;" class="ft18 fas color-violet ml-10"></Span>
+        </FormattedString>
+  </Label>
+</stacklayout>  
       
-                    
-                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90%" padding="20">
-                        <Label text="Vegitables" class="bold" fontSize="15" color="#fff"></Label>
-                     
-                    </StackLayout>
-                     </GridLayout>
-                 </ng-container>
+ <ng-container *ngIf="!isseeallshow"> 
+<categoryitems></categoryitems>
+</ng-container> 
 
-
-                 <ng-container >
-                  <GridLayout height="150" margin="15,15,7.5,7.5" width="170" class="cat_image" row="0" col="1">
-                     <image  height="150" margin="15,15,7.5,7.5" width="170" class="cat_image"
-                     src="res://fruits" stretch="aspectFill" (tap)="GoToFruitsList()"></image>
-                   
-                       <ng-container>
-                          <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="0" col="1" height="150" width="170"></ContentView>
-                      </ng-container> 
-      
-                    
-                      <StackLayout row="0" col="1" verticalAlignment="center" horizontalAlignment="left" width="70%" padding="20">
-                        <Label text="Fruits" class="bold" fontSize="15" color="#fff"></Label>
-                     
-                    </StackLayout>
-                     </GridLayout>
-                 </ng-container>
-      
-                 <ng-container >
-                  <GridLayout height="150" margin="7.5,7.5,15,15" width="170" class="cat_image" row="1" col="0" >
-                     <image  height="150" margin="7.5,7.5,15,15" width="170" class="cat_image"
-                     src="res://leafy_veg" stretch="aspectFill" (tap)="GoToLeafyvegitabelsList()"></image>
-                    
-                      <ng-container>
-                        <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="1" col="0" height="150" width="170"></ContentView>
-                    </ng-container>
-      
-                    
-                      <StackLayout row="1" col="0" verticalAlignment="center" horizontalAlignment="left" width="100%" padding="20">
-                        <Label text="Leafy" class="bold" fontSize="15" color="#fff"></Label>
-                        <Label text="Vegitables" class="bold" fontSize="15" color="#fff"></Label>
-                    </StackLayout>
-                     </GridLayout>
-                 </ng-container>
-                   
-                 <ng-container >
-                  <GridLayout height="150" margin="7.5,15,15,7.5" width="170" class="cat_image" row="1" col="1">
-                     <image  height="150" margin="7.5,15,15,7.5" width="170" class="cat_image" 
-                     src="res://chocolate" stretch="aspectFill" (tap)="GoToChacolatesList()"></image>
-                      
-                      <ng-container>
-                          <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="1" col="1" height="150" width="170"></ContentView>
-                      </ng-container>
-   
-                      <StackLayout row="1" col="1" verticalAlignment="center" horizontalAlignment="left" width="100%" padding="20">
-                        <Label text="Chacolates" class="bold" fontSize="15" color="#fff"></Label>
-                     
-                    </StackLayout>
-                     </GridLayout>
-                 </ng-container>
-            </GridLayout>                
-         </ng-container>
-         
+<ng-container *ngIf="isseeallshow">
+<seeall-items></seeall-items>
+</ng-container>
 
         <stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top" backgroundcolor="red">
             <Label text="Recommanded Products" class="ft20"  width="80%" height="40" style="padding-left: 20;"></Label>     
@@ -107,10 +41,10 @@
                <StackLayout orientation="horizontal">
                   <GridLayout  rows="auto" columns="200,200,200,200,200,200,200,200,200" >
                  
-                     <GridLayout rows="*, *, *" columns="*, *" row="0" col="0">
+                     <GridLayout rows="*, *, *" columns="*, *" row="0" col="0" margin="6" backgroundColor="#ffe6e6">
                  
                      <GridLayout height="50" width="100" row="0" col="0">
-                       <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                       <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                  
                          <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
                           <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -128,9 +62,9 @@
                     </GridLayout> 
                     
                       
-                    <GridLayout rows="*, *, *" columns="*, *" row="0" col="1"> 
+                    <GridLayout rows="*, *, *" columns="*, *" row="0" col="1"  backgroundColor="#ffe6e6" margin="6"> 
                  
-                       <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                       <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                  
                        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                           <Label text="75%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -142,9 +76,9 @@
                      </StackLayout>
                     </GridLayout> 
 
-                    <GridLayout rows="*, *, *" columns="*, *" row="0" col="2"> 
+                    <GridLayout rows="*, *, *" columns="*, *" row="0" col="2"  backgroundColor="#ffe6e6" margin="6"> 
                  
-                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                
                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -156,9 +90,9 @@
                    </StackLayout>
                   </GridLayout> 
 
-                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="3"> 
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="3"  backgroundColor="#ffe6e6" margin="6"> 
                  
-                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                
                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                         <Label text="35%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -170,9 +104,9 @@
                    </StackLayout>
                   </GridLayout> 
 
-                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="4"> 
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="4"  margin="6" backgroundColor="#ffe6e6"> 
                  
-                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                
                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                         <Label text="45%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -184,9 +118,9 @@
                    </StackLayout>
                   </GridLayout> 
 
-                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="5"> 
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="5"  margin="6" backgroundColor="#ffe6e6"> 
                  
-                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                
                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                         <Label text="25%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -198,9 +132,9 @@
                    </StackLayout>
                   </GridLayout> 
 
-                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="6"> 
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="6"  margin="6" backgroundColor="#ffe6e6"> 
                  
-                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                
                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                         <Label text="75%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -212,9 +146,9 @@
                    </StackLayout>
                   </GridLayout> 
 
-                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="7"> 
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="7" margin="6"  backgroundColor="#ffe6e6"> 
                  
-                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                
                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                         <Label text="65%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -226,9 +160,9 @@
                    </StackLayout>
                   </GridLayout> 
 
-                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="8"> 
+                  <GridLayout rows="*, *, *" columns="*, *" row="0" col="8" margin="6" backgroundColor="#ffe6e6"> 
                  
-                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0"></image> 
+                     <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
                
                      <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90" row="0" col="0" >
                         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
@@ -243,27 +177,28 @@
       
       </StackLayout>
    </ScrollView>
-</ng-container>
+</ng-container> 
 
 
-<stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top" backgroundcolor="red">
+
+<stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top">
    <Label text="Hot Deals" class="ft20"  width="80%" height="40" style="padding-left: 20;"></Label>    
 </stacklayout>
 
-<ng-container>
-   <GridLayout columns="auto,auto" rows="auto" verticalAlignment="top" margin="16" >
+<ng-container margin="0,0,15,10">
+   <GridLayout columns="auto,auto" rows="auto" verticalAlignment="top"  margin="5,0,0,0">
 
       <ng-container >
-         <GridLayout height="160" margin="15" width="170" class="cat_image" backgroundColor="red" row="0" col="0">
-            <image  height="150" margin="15" width="150" class="cat_image"
+         <GridLayout height="160" margin="15,15,0,15" width="170" class="cat_image" backgroundColor="#ffe6e6" row="0" col="0">
+            <image  height="150" margin="15,15,0,15" width="150" class="cat_image"
             src="res://flour3" stretch="aspectFill" ></image>
             </GridLayout>
         </ng-container>
 
 
         <ng-container >
-         <GridLayout height="150" margin="15" width="170" class="cat_image" row="0" col="1" backgroundColor="#ffe6e6">
-            <image  height="130 " margin="15" width="130" class="cat_image"
+         <GridLayout height="150" margin="15,15,0,15" width="170" class="cat_image" row="0" col="1" backgroundColor="#ffe6e6">
+            <image  height="130 " margin="15,15,0,15" width="130" class="cat_image"
             src="res://hot_deal_tag" stretch="aspectFit" ></image>
             <StackLayout row="1" col="1" colSpan="2" class="text-center">
                <Label text="10% off" textWrap="true" class="color-black fas-30" alignContent="center"></Label>

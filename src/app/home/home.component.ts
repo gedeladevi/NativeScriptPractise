@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
     const scrollView = args.object as ScrollView;    
 }
  
+isseeallshow:Boolean=false;
   constructor(private route:Router) {
 
   }
@@ -44,20 +45,14 @@ export class HomeComponent implements OnInit {
         alert("Go TO GoogleMaps");
       }
 
-    GoToSeeAllItems():void{
-      this.route.navigate(["/home/seeallitems"]);
+      GoToCategories():void{
+        this.isseeallshow=false;
+      
     }
-   GoTovegitabelsList():void{
-         alert("Different types of vegitabels available")
-        }
-   GoToFruitsList():void{
-      alert("All Fruits available here")
-    }
-   GoToLeafyvegitabelsList():void{
-      alert("Fresh Leafy Vegitabels available here")
-    }
-   GoToChacolatesList():void{
-     alert("All types of chacolates available here")
+
+    GoToSeeAllItems():void{ 
+      this.isseeallshow=true;
+      
     }
 
 }

@@ -6,14 +6,16 @@ import { ForgotpasswordComponent } from '../forgotpassword/forgotpassword.compon
 import { LoginComponent } from '../login/login.component'
 import { HomeComponent } from './home.component'
 import { SeeallitemsComponent } from '../seeallitems/seeallitems.component'
-
+import {CategoryitemsComponent } from '../categoryitems/categoryitems.component'
+  
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent} ,
   { path: 'createaccount', component: CreateaccountComponent},
   { path:'forgotpassword',component: ForgotpasswordComponent},  
-  { path:'seeallitems' , component:SeeallitemsComponent}
+  { path:'seeallitems' , component:SeeallitemsComponent},
+  {path:'categorylist' ,component: CategoryitemsComponent}
 ]
 
 @NgModule({

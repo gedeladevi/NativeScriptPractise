@@ -1,0 +1,72 @@
+<ng-container>
+    <GridLayout columns="auto,auto" rows="auto,auto" verticalAlignment="top" >
+
+       <ng-container >
+          <GridLayout height="150" margin="0,7.5,7.5,15" width="170" class="cat_image" (tap)="GoTovegitabelsList()"row="0" col="0">
+             <image  height="150" margin="0,7.5,7.5,15" width="170" class="cat_image"
+             src="res://vegetables" stretch="aspectFill" ></image>
+          
+              <ng-container>
+                  <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="0" col="0" height="150" width="170"></ContentView>
+              </ng-container>
+
+            
+              <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90%" padding="20">
+                <Label text="Vegitables" class="bold" fontSize="15" color="#fff"></Label>
+             
+            </StackLayout>
+             </GridLayout>
+         </ng-container>
+
+
+         <ng-container >
+          <GridLayout height="150" margin="0,15,7.5,7.5" width="170" class="cat_image" row="0" col="1">
+             <image  height="150" margin="0,15,7.5,7.5" width="170" class="cat_image"
+             src="res://fruits" stretch="aspectFill" (tap)="GoToFruitsList()"></image>
+           
+               <ng-container>
+                  <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="0" col="1" height="150" width="170"></ContentView>
+              </ng-container> 
+
+            
+              <StackLayout row="0" col="1" verticalAlignment="center" horizontalAlignment="left" width="70%" padding="20">
+                <Label text="Fruits" class="bold" fontSize="15" color="#fff"></Label>
+             
+            </StackLayout>
+             </GridLayout>
+         </ng-container>
+
+         <ng-container >
+          <GridLayout height="150" margin="7.5,7.5,15,15" width="170" class="cat_image" row="1" col="0" >
+             <image  height="150" margin="7.5,7.5,15,15" width="170" class="cat_image"
+             src="res://leafy_veg" stretch="aspectFill" (tap)="GoToLeafyvegitabelsList()"></image>
+            
+              <ng-container>
+                <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="1" col="0" height="150" width="170"></ContentView>
+            </ng-container>
+
+            
+              <StackLayout row="1" col="0" verticalAlignment="center" horizontalAlignment="left" width="100%" padding="20">
+                <Label text="Leafy" class="bold" fontSize="15" color="#fff"></Label>
+                <Label text="Vegitables" class="bold" fontSize="15" color="#fff"></Label>
+            </StackLayout>
+             </GridLayout>
+         </ng-container>
+           
+         <ng-container >
+          <GridLayout height="150" margin="7.5,15,15,7.5" width="170" class="cat_image" row="1" col="1">
+             <image  height="150" margin="7.5,15,15,7.5" width="170" class="cat_image" 
+             src="res://chocolate" stretch="aspectFill" (tap)="GoToChacolatesList()"></image>
+              
+              <ng-container>
+                  <ContentView backgroundColor="#404040" class="cat_image" opacity="0.5" row="1" col="1" height="150" width="170"></ContentView>
+              </ng-container>
+
+              <StackLayout row="1" col="1" verticalAlignment="center" horizontalAlignment="left" width="100%" padding="20">
+                <Label text="Chacolates" class="bold" fontSize="15" color="#fff"></Label>
+             
+            </StackLayout>
+             </GridLayout>
+         </ng-container>
+    </GridLayout>                
+ </ng-container> 
