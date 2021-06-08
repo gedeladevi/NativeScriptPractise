@@ -87,6 +87,14 @@
  .color-black{
     color:black;
  }
+ .color-gray{
+     color: #8c8c8c;
+ }
+ .color-Red{
+     color: crimson;
+     font-weight: bold;
+     font-size: 15;
+ }
  .text-center{
      text-align: center;
  }
@@ -94,12 +102,21 @@
  .cat_image{
     border-radius: 10;
  }
+ .cat_image1{
+    border-radius:0,0,10,10;
+ }
  
  .grid{
  margin-left: 1.5%;
  
  }
- .cat_image1{  
-    border-radius: 10;
- }
+
   
+ .fas25{
+     font-weight: bold;
+     font-size: 25;
+ }
+
+ .grid-border{
+     border:2px solid red;
+ }

@@ -7,6 +7,7 @@ import { LoginComponent } from '../login/login.component'
 import { HomeComponent } from './home.component'
 import { SeeallitemsComponent } from '../seeallitems/seeallitems.component'
 import {CategoryitemsComponent } from '../categoryitems/categoryitems.component'
+import { Seeallitems1Component} from '../seeallitems1/seeallitems1.component'
   
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'createaccount', component: CreateaccountComponent},
   { path:'forgotpassword',component: ForgotpasswordComponent},  
   { path:'seeallitems' , component:SeeallitemsComponent},
-  {path:'categorylist' ,component: CategoryitemsComponent}
+  {path:'categorylist' ,component: CategoryitemsComponent},
+  {path:'seeallitems1',component:Seeallitems1Component}
 ]
 
 @NgModule({

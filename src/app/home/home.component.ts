@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { registerElement } from '@nativescript/angular';
 import { CardView } from '@nstudio/nativescript-cardview';
 import { ScrollView, ScrollEventData } from "tns-core-modules/ui/scroll-view";
-import { SearchBar } from 'tns-core-modules';
 import { RadSideDrawer } from 'nativescript-ui-sidedrawer'
 import { Application} from '@nativescript/core'
 
@@ -16,10 +15,6 @@ import { Application} from '@nativescript/core'
   styleUrls:["./home.component.css"]
 })
 export class HomeComponent implements OnInit {
-  // searchPhrase: string;
-  //   onSearchSubmit(args): void {
-  //       let searchBar = <SearchBar>args.object;
-  //       console.log("You are searching for " + searchBar.text);}
 
   onScroll(args: ScrollEventData) {
     const scrollView = args.object as ScrollView;    
@@ -49,10 +44,12 @@ isseeallshow:Boolean=false;
         this.isseeallshow=false;
       
     }
-
     GoToSeeAllItems():void{ 
       this.isseeallshow=true;
       
     }
+    GoToSeeAllItems1():void{
+      this.route.navigate(["/home/seeallitems1"])
+}
 
 }

@@ -9,6 +9,7 @@ import { CommonModule} from '../commonheader/common.module'
 import { SeeallitemsComponent } from '../seeallitems/seeallitems.component'
 import { CommonhorizontalscrollComponent} from '../commonhorizontalscroll/commonhorizontalscroll.component'
 import { CategoryitemsComponent } from '../categoryitems/categoryitems.component'
+import { Seeallitems1Component } from '../seeallitems1/seeallitems1.component'
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { CategoryitemsComponent } from '../categoryitems/categoryitems.component
     ,SeeallitemsComponent 
     ,CategoryitemsComponent
     ,CommonhorizontalscrollComponent
+    ,Seeallitems1Component
 
   ],
   schemas: [NO_ERRORS_SCHEMA],
