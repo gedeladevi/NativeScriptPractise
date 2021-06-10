@@ -1,5 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'
-import { NativeScriptCommonModule } from '@nativescript/angular'
+import { NativeScriptCommonModule, NativeScriptFormsModule } from '@nativescript/angular'
 import { HomeRoutingModule } from './home.routing.module'
 import { HomeComponent } from './home.component'
 import { LoginComponent } from '../login/login.component'
@@ -11,11 +11,13 @@ import { CommonhorizontalscrollComponent} from '../commonhorizontalscroll/common
 import { CategoryitemsComponent } from '../categoryitems/categoryitems.component'
 import { Seeallitems1Component } from '../seeallitems1/seeallitems1.component'
 
+
 @NgModule({
   imports: [
     NativeScriptCommonModule,
      HomeRoutingModule,
-     CommonModule
+     CommonModule,
+     NativeScriptFormsModule
     ],
   declarations: [HomeComponent
     ,LoginComponent
@@ -25,6 +27,7 @@ import { Seeallitems1Component } from '../seeallitems1/seeallitems1.component'
     ,CategoryitemsComponent
     ,CommonhorizontalscrollComponent
     ,Seeallitems1Component
+    
 
   ],
   schemas: [NO_ERRORS_SCHEMA],

@@ -1,1 +1,381 @@
+<GridLayout rows="auto, *">
 
+<ActionBar class="class_grid1" width="500" height="100">
+    <GridLayout rows="55" columns="40,300">
+            <stackLayout row="0" col="0">
+                <Label class="fas fs-30 brd color-white" text="&#xf0a8;" (tap)="GoTohomepage()"></Label>
+                </stackLayout>
+        <StackLayout row="0" col="1">
+            <SearchBar  hint="Search Grocery Here" class="cat_image text-center" verticalAlignment="center" margin="0,0,0,30"   
+            [text]="searchPhrase" verticalAlignment="center" backgroundColor="#D7B7FC" 
+           (submit)="onSearchSubmit($event)">
+       </SearchBar>
+        </StackLayout>
+    </GridLayout>
+</ActionBar> 
+
+
+<StackLayout>
+<TabView selectedTabTextColor="#000000" 
+tabBackgroundColor="#f2f2f2"
+tabTextFontSize="22"
+androidSelectedTabHighlightColor="green">
+<StackLayout *tabItem="{title: 'Dals & Pulses', iconSource: 'res://grain', textTransform: 'uppercase'}" >
+<Label text="Dals & Pulses" textWrap="true" class="m-15 h2 text-left" color="#a6a6a6"></Label>
+</StackLayout>
+<StackLayout *tabItem="{title: 'Edible Oils', iconSource: 'res://edible_oils', textTransform: 'uppercase'}">
+<Label text="Edible Oils" textWrap="true" class="m-15 h2 text-left" color="#a6a6a6"></Label>
+</StackLayout>
+<StackLayout *tabItem="{title: 'Beauty & Hygine', iconSource: 'res://tomato', textTransform: 'uppercase'}">
+    <Label text="Beauty & Hygine" textWrap="true" class="m-15 h2 text-left" color="#a6a6a6"></Label>
+    </StackLayout>
+</TabView>   
+</StackLayout> 
+
+    <ScrollView  row="1" height="100%" iosOverflowSafeAreaEnabled="false"> 
+    <StackLayout>
+
+<ng-container>
+    <ScrollView orientation="vertical" scrollBarIndicatorVisible="false">
+        <StackLayout orientation="vertical">
+<GridLayout  rows="auto,auto,auto,auto" columns="200,200" verticalAlignment="top" >
+                 
+    <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="0" col="0" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+   
+   <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="0" col="1" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+ 
+   <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="1" col="0" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+
+
+   <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="1" col="1" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+
+   <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="2" col="0" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+
+   <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="2" col="1" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+
+   <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="3" col="0" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+
+   <GridLayout rows="*, *, *,*,*,*" columns="*, *" row="3" col="1" margin="6" backgroundColor="#fff0f3">
+
+    <GridLayout height="50" width="100" row="0" col="0">
+      <image  height="50" width="100" class="cat_image" src="res://discount" stretch="aspectFit" row="0" col="0" margin="6"></image> 
+
+        <StackLayout row="0" col="0" verticalAlignment="center" horizontalAlignment="left" width="90"  >
+         <Label text="55%" class="bold" margin="0,0,0,35" fontSize="15" color="#fff"></Label>
+     </StackLayout>
+      </GridLayout>
+       
+            <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+     
+    <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
+   
+    <StackLayout row="2" col="0" colSpan="2" class="text-center">
+      <Label text="Double Daimond" textWrap="true" class="color-black" alignContent="center"></Label>
+      <Label text="Premium Medha Flour" textWrap="true" class="color-black" alignContent="center"></Label>           
+    </StackLayout>    
+
+    
+        <Label text="$20.00" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
+        <Label text="+6 Sellers" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+    
+      
+        <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
+     
+    
+        <Label text="Sunitha" row="5" col="0" textWrap="true" class="color-black text-center ft20" ></Label>
+
+    <GridLayout rows="*" columns="*,*,*" row="5" col="1"  backgroundColor="#5EC401" height="35" class="cat_image2">
+    
+        <Label row="0" col="0" class="fas fs-15 color-white text-center" (tap)="minusqty()" text="&#xf068;" verticalAlignment="center"></Label>
+        <Label row="0" col="1" class="color-white fs-15 text-center" [text]="qty" verticalAlignment="center"></Label>
+        <Label row="0" col="2" class="fas fs-15 color-white text-center" (tap)="plusqty()" text="&#xf067;" verticalAlignment="center"></Label>
+
+    
+    </GridLayout>
+
+
+   </GridLayout> 
+
+ </GridLayout>
+</StackLayout>
+</ScrollView>
+</ng-container>
+
+
+
+</StackLayout>
+ </ScrollView>
+</GridLayout>

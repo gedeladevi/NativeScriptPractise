@@ -23,6 +23,9 @@
 .fs-30{
     font-size: 30px;
 }
+.fs-15{
+    font-size: 15px;
+}
 .color-violet{
     color: blueviolet;
 }
@@ -32,6 +35,10 @@
 
 .ft20{
     font-size: 15px;
+    font-weight: bold;
+}
+.ft30{
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -84,6 +91,14 @@
   .color-white{
     color: white;
  }
+
+ .icon-margin{
+     border: solid rgb(243, 20, 20) 3px;
+     border-radius: 10;
+ }
+ .color-blue{
+     color: slateblue;
+ }
  .color-black{
     color:black;
  }
@@ -105,6 +120,9 @@
  .cat_image1{
     border-radius:0,0,10,10;
  }
+ .cat_image2{
+    border-radius: 10,0,0,0;
+ }
  
  .grid{
  margin-left: 1.5%;
@@ -120,3 +138,6 @@
  .grid-border{
      border:2px solid red;
  }
+
+
+
