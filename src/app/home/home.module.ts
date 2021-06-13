@@ -10,6 +10,7 @@ import { SeeallitemsComponent } from '../seeallitems/seeallitems.component'
 import { CommonhorizontalscrollComponent} from '../commonhorizontalscroll/commonhorizontalscroll.component'
 import { CategoryitemsComponent } from '../categoryitems/categoryitems.component'
 import { Seeallitems1Component } from '../seeallitems1/seeallitems1.component'
+import { SblqwipoService } from '../Service'
 
 
 @NgModule({
@@ -26,10 +27,9 @@ import { Seeallitems1Component } from '../seeallitems1/seeallitems1.component'
     ,SeeallitemsComponent 
     ,CategoryitemsComponent
     ,CommonhorizontalscrollComponent
-    ,Seeallitems1Component
-    
-
-  ],
+    ,Seeallitems1Component     
+    ],
   schemas: [NO_ERRORS_SCHEMA],
+  providers: [SblqwipoService]
 })
 export class HomeModule {}

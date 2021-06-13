@@ -7,4 +7,6 @@ export class DalsAndPulses {
     SellerName:string;
     Quantity?:number;
     Points?:number;
+    Row?:number;
+    Col?:number;
 }
