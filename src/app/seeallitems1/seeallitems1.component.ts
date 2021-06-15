@@ -35,16 +35,36 @@ this.SeeAllItems2 = this._sblqwipoService.GetSeeallitems2();
 this.SeeAllItems2 = this._sblqwipoService.FormateItems2(this.SeeAllItems2);
 
 this.SeeAllItems3 = this._sblqwipoService.GetSeeallitems3();
-
+this.SeeAllItems3 = this._sblqwipoService.FormateItems3(this.SeeAllItems3);
 
     }
     GoTohomepage():void{
         this.route.navigate(["/home"])
     }
-    minusqty():void{
-        this.qty--;
+    minusqty1(item:DalsAndPulses):void{
+item.Quantity--;
+
+        //this.qty--;
     }
-    plusqty():void{
-        this.qty++;
+    plusqty1(item:DalsAndPulses):void{
+        item.Quantity++;
+        //this.qty++;
     }
+
+    
+    minusqty2(item:EdilbleOils):void{
+        item.Quantity--;
+    }
+    plusqty2(item:EdilbleOils):void{
+        item.Quantity++;
+    }
+
+
+    minusqty3(item:BeautyAndHygine):void{
+        item.Quantity--;
+    }
+    plusqty3(item:BeautyAndHygine):void{
+        item.Quantity++;
+    }
+
 }

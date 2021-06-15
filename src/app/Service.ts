@@ -223,8 +223,12 @@ for ( let y = 0; y < rows; y++ ) {
   for ( let x = 0; x < columns; x++ ) {
   index++; 
   
+ if(index <= (itemcount-1)){
   items1[index].Row = y;
-  items1[index].Col = x;      
+  items1[index].Col = x;  
+ }
+
+      
   }
 } 
 return items1;
@@ -240,8 +244,12 @@ for ( let y = 0; y < rows; y++ ) {
   for ( let x = 0; x < columns; x++ ) {
   index++; 
   
-  items2[index].Row = y;
-  items2[index].Col = x;      
+  if(index <= (itemcount-1)){
+    items2[index].Row = y;
+    items2[index].Col = x;  
+   }
+
+      
   }
 } 
 return items2;
@@ -259,8 +267,14 @@ for ( let y = 0; y < rows; y++ ) {
   for ( let x = 0; x < columns; x++ ) {
   index++; 
   
-  items3[index].Row = y;
-  items3[index].Col = x;      
+      
+
+  if(index <= (itemcount-1)){
+    items3[index].Row = y;
+    items3[index].Col = x;  
+   }
+
+
   }
 } 
 return items3;
