@@ -4,7 +4,7 @@ import { registerElement } from '@nativescript/angular';
 import { CardView } from '@nstudio/nativescript-cardview';
 import { ScrollView, ScrollEventData } from "tns-core-modules/ui/scroll-view";
 import { RadSideDrawer } from 'nativescript-ui-sidedrawer'
-import { Application} from '@nativescript/core'
+import { Application } from '@nativescript/core'
 
 
 

@@ -1,4 +1,4 @@
-export class DalsAndPulses {
+export class EdilbleOils {
     Discount?:number;
     ImageUrl:string;
     Name:string;

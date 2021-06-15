@@ -1,4 +1,4 @@
-export class DalsAndPulses {
+export class BeautyAndHygine{
     Discount?:number;
     ImageUrl:string;
     Name:string;
@@ -10,3 +10,5 @@ export class DalsAndPulses {
     Row?:number;
     Col?:number;
 }
+
+

@@ -51,7 +51,10 @@
                       </StackLayout>
                        </GridLayout>
                         
-                             <image height="40" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit" row="0" col="1"></image>
+                       <GridLayout  rows="*" columns="*, *" row="0" col="1" width="70" class="cat_image"  marginTop="10">
+                        <image row="0" col="0" height="20" width="18" class="cat_image" src="res://rupeeicon" stretch="aspectFit"></image>
+                         <label text="45pts" row="0" col="1" height="20" width="40"></label>
+                       </GridLayout>
                       
                      <image height="100" width="100" class="cat_image" src="res://flourcopy" stretch="aspectFit" row="1" col="0" colSpan="2"></image> 
                     
@@ -181,7 +184,7 @@
 
 
 
-<stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top">
+<stacklayout orientation="horizontal" width="100%" height="50" verticalAlignment="top" >
    <Label text="Hot Deals" class="ft20"  width="80%" height="40" style="padding-left: 20;"></Label>    
 </stacklayout>
 
@@ -189,15 +192,15 @@
    <GridLayout columns="auto,auto" rows="auto" verticalAlignment="top"  margin="5,0,0,0">
 
       <ng-container >
-         <GridLayout height="160" margin="15,15,0,15" width="170" class="cat_image" row="0" col="0">
-            <image  height="150" margin="15,15,0,15" width="150" class="cat_image"
+         <GridLayout height="160" margin="0,15,0,15" width="170" class="cat_image" row="0" col="0">
+            <image  height="150" margin="5,15,0,15" width="150" class="cat_image"
             src="res://flour3" stretch="aspectFill" ></image>
             </GridLayout>
         </ng-container>
 
 
         <ng-container >
-         <GridLayout row="*,*" columns="*" row="0" col="1"  height="160" margin="8,8,0,8" width="170"
+         <GridLayout row="*,*" columns="*" row="0" col="1"  height="160" margin="0,8,0,8" width="170"
           class="cat_image" backgroundColor="#ffe6e6">
             <StackLayout width="140" height="150">
                <StackLayout row="0" col="0"   class="cat_image1"> 
