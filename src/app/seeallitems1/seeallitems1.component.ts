@@ -26,7 +26,6 @@ export class Seeallitems1Component implements OnInit {
     constructor(private route:Router,private _sblqwipoService:SblqwipoService) {
     }
 
-
     ngOnInit(): void {
 this.SeeAllItems1 = this._sblqwipoService.GetSeeallitems1();
 this.SeeAllItems1 = this._sblqwipoService.FormateItems1(this.SeeAllItems1);
@@ -42,7 +41,7 @@ this.SeeAllItems3 = this._sblqwipoService.FormateItems3(this.SeeAllItems3);
         this.route.navigate(["/home"])
     }
     minusqty1(item:DalsAndPulses):void{
-item.Quantity--;
+       item.Quantity--;
 
         //this.qty--;
     }
@@ -51,7 +50,7 @@ item.Quantity--;
         //this.qty++;
     }
 
-    
+
     minusqty2(item:EdilbleOils):void{
         item.Quantity--;
     }
