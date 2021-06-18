@@ -13,6 +13,8 @@ import { Seeallitems1Component } from '../seeallitems1/seeallitems1.component'
 import { SblqwipoService } from '../Service'
 
 
+
+
 @NgModule({
   imports: [
     NativeScriptCommonModule,
@@ -20,16 +22,18 @@ import { SblqwipoService } from '../Service'
      CommonModule,
      NativeScriptFormsModule
     ],
-  declarations: [HomeComponent
+  declarations: [
+    HomeComponent
     ,LoginComponent
     ,CreateaccountComponent
     ,ForgotpasswordComponent     
     ,SeeallitemsComponent 
     ,CategoryitemsComponent
     ,CommonhorizontalscrollComponent
-    ,Seeallitems1Component     
+    ,Seeallitems1Component    
     ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [SblqwipoService]
+
 })
 export class HomeModule {}

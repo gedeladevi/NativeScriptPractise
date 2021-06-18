@@ -55,7 +55,7 @@
     
         
             <Label [text]="'$'+item.Cost+'.'+'00'" row="3" col="0" textWrap="true" class="color-black text-center ft20"  margin="5,0,10,0"></Label>
-            <Label [text]="'+'+item.SellersCount+'Sellers'" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
+            <Label (tap)="showModal()" [text]="'+'+item.SellersCount+'Sellers'" row="3" col="1" textWrap="true" class="color-blue text-center ft20" margin="5,0,10,0" ></Label>           
         
           
             <Label text="Seller" row="4" col="0"  textWrap="true" class="color-gray text-center ft20" ></Label>
@@ -225,3 +225,18 @@
   </StackLayout>
 
 </TabView>
+
+
+
+
+
+
+<GridLayout class="page" [class.dialogOpen]="dialogOpen">
+	<AbsoluteLayout class="dialog-wrapper">
+		<StackLayout class="dialog">
+			<Label class="h3" textWrap="true" text="Are you sure you want to share your data with 42 people?"></Label>
+			<Button class="btn btn-primary" text="Share"></Button>
+			<Button class="btn btn-outline" text="Cancel" (tap)="closeDialog()"></Button>
+		</StackLayout>
+	</AbsoluteLayout>
+</GridLayout>
